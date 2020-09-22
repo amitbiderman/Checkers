@@ -1,7 +1,7 @@
 A checkers game built in Python using the Pygame modules.
 
 
-![GIF demo](readme_files/checkers_gif.gif)
+![GIF demo](readme_files/gameplay.gif)
 
 
 
