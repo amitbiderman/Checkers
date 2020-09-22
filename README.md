@@ -9,7 +9,7 @@ A checkers game built in Python using the Pygame modules.
 ---
 
 ```
-Usage: main.py [OPTIONS]
+Usage: main.py 
 
 ```
 
