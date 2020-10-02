@@ -1,4 +1,5 @@
 A checkers game built in Python using the Pygame modules.
+Playing against the computer using AI and MinMax algorithm
 
 
 ![GIF demo](readme_files/gameplay.gif)
@@ -30,8 +31,7 @@ Usage: main.py
 ---
 
 ```
-Look forward for added AI !
-So playing against the computer will be avaliable.
+A menu will be added so you can choose to play VS computer or with a friend :)
 
 ```
 
