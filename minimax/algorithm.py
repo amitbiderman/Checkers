@@ -7,7 +7,7 @@ WHITE = (255, 255, 255)
 def minimax(position, depth, max_player, game):
     if depth == 0 or position.winner() != None:
         return position.evaluate(), position
-    
+
     if max_player:
         maxEval = float('-inf')
         best_move = None
@@ -16,7 +16,7 @@ def minimax(position, depth, max_player, game):
             maxEval = max(maxEval, evaluation)
             if maxEval == evaluation:
                 best_move = move
-        
+
         return maxEval, best_move
     else:
         minEval = float('inf')
@@ -26,7 +26,7 @@ def minimax(position, depth, max_player, game):
             minEval = min(minEval, evaluation)
             if minEval == evaluation:
                 best_move = move
-        
+
         return minEval, best_move
 
 
@@ -49,7 +49,7 @@ def get_all_moves(board, color, game):
             temp_piece = temp_board.get_piece(piece.row, piece.col)
             new_board = simulate_move(temp_piece, move, temp_board, game, skip)
             moves.append(new_board)
-    
+
     return moves
 
 
@@ -60,4 +60,3 @@ def get_all_moves(board, color, game):
 #     game.draw_valid_moves(valid_moves.keys())
 #     pygame.display.update()
 #     #pygame.time.delay(100)
-

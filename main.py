@@ -2,6 +2,10 @@ import pygame
 from checkers.constants import WIDTH, HEIGHT, SQUARE_SIZE, RED, WHITE
 from checkers.game import Game
 from minimax.algorithm import minimax
+from menu_assets.menu import OptionsMenu
+from menu_assets.menu import Menu
+from menu_assets.logics import Logics
+
 
 FPS = 60
 
@@ -22,11 +26,21 @@ class MainGame:
         return row, col
 
     def main(self):
+        logics = Logics()
+
+        while logics.running:
+            logics.curr_menu.display_menu()
+            logics.game_loop()
+
         while self.RUN:
             self.CLOCK.tick(FPS)
-
             if self.GAME.turn == WHITE:
-                value, new_board = minimax(self.GAME.get_board(), 2, WHITE, self.GAME)
+                value, new_board = minimax(self.GAME.get_board(), logics.options.difficulty,
+                                           WHITE, self.GAME)
+                if new_board is None:
+                    print("TIE")
+                    break
+
                 self.GAME.ai_move(new_board)
 
             if self.GAME.winner() is not None:
@@ -48,5 +62,4 @@ class MainGame:
 
 
 if __name__ == '__main__':
-    maingame = MainGame()
-    maingame.main()
+    MainGame().main()
