@@ -27,13 +27,6 @@ Usage: main.py
 
 
 
-**Upcoming**
----
-
-```
-
-A menu will be added so you can choose to play VS computer or with a friend :)
-
 ```
 
 
