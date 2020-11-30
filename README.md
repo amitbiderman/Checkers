@@ -2,7 +2,7 @@ A checkers game built in Python using the Pygame modules.
 Playing against the computer using AI and MinMax algorithm
 
 
-![GIF demo](readme_files/gameplay.gif)
+![GIF demo](readme_files/checkers_gif.gif)
 
 
 
