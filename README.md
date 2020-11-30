@@ -28,9 +28,4 @@ Usage: main.py
 
 
 ```
-
-
-
-
-
-Hope you like you :)
+Hope you like it :)
