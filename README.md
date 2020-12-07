@@ -25,6 +25,7 @@ Usage: main.py
 
     + `python3 -m pygame.examples.aliens`
 
+3. Run the main.py file 
 
 
 ```
